@@ -5,6 +5,9 @@ on: [pull_request, push]
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
+  PROVIDER_URL: ${{ secrets.PROVIDER_URL }}
+  USDC_CONTRACT_ADDRESS: ${{ secrets.USDC_CONTRACT_ADDRESS }}
+
 
 jobs:
   lint:
