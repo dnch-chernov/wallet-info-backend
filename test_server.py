@@ -16,6 +16,7 @@ class TestServer:
     """
     Test api endpoints.
     """
+
     def test_happy_path_eth(self):
         """
         Get ETH balance

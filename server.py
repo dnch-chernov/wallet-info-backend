@@ -43,6 +43,7 @@ async def eth_balance(crypto: str, address: str):
         balance = w3.fromWei(wei, "mwei")
     return {"crypto": crypto, "balance": balance}
 
+
 @app.get("/status")
 async def status():
     """

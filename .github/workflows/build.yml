@@ -27,7 +27,7 @@ jobs:
 
       - name: Install linters
         run: |
-          pip install pytest pylint black isort fastapi web3 
+          pip install pytest pylint black isort fastapi[all] web3 
 
       - name: Lint code
         run: |
