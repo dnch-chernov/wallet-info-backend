@@ -15,7 +15,9 @@ app = FastAPI()
 w3 = Web3(Web3.HTTPProvider(provider))
 with open("abi.json", "r", encoding="UTF-8") as abi_file:
     abi = json.load(abi_file)
-contract = w3.eth.contract(address=Web3.toChecksumAddress(usdc_contract_address), abi=abi)
+contract = w3.eth.contract(
+    address=Web3.toChecksumAddress(usdc_contract_address), abi=abi
+)
 
 
 @app.get("/balance/{crypto}/{address}")

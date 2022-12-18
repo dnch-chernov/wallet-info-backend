@@ -5,7 +5,7 @@ RUN pip install web3 pytest pylint black isort
 
 WORKDIR /app
 
-COPY src /app
+COPY . /app
 
 ENV PROVIDER_URL "http://localhost:8545"
 ENV USDC_CONTRACT_ADDRESS "0x07865c6e87b9f70255377e024ace6630c1eaa37f"
