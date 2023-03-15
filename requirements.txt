@@ -3,4 +3,5 @@ pylint
 black
 isort
 fastapi
+httpx
 web3 < 6.0.0

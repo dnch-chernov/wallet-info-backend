@@ -4,7 +4,7 @@ Simple API server that returns balance for ETH and USDC wallets.
 import json
 import os
 
-from fastapi import FastAPI, HTTPException, Depends
+from fastapi import Depends, FastAPI, HTTPException
 from web3 import Web3
 
 from error_messages import ErrorMessage

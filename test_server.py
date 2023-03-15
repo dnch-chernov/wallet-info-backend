@@ -2,8 +2,8 @@
 Unit tests for API server.
 """
 from fastapi.testclient import TestClient
-
 from web3 import Web3
+
 from error_messages import ErrorMessage
 from server import app, get_eth_balance, get_usdc_balance, get_w3_connected
 
