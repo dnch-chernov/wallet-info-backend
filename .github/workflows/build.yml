@@ -68,3 +68,4 @@ jobs:
           workflow: Deploy and Test
           token: ${{ secrets.GTA_REPO_ACCESS_TOKEN }}
           repo: dnch-chernov/grand-test-automation
+          inputs: '{"testType": "all"}'
